@@ -8,5 +8,8 @@ require_once "header.php";
     <section></section>
 </main>
 
-<?php require_once "footer.php";
+
+
+<?php
+require_once "footer.php";
 ?>
