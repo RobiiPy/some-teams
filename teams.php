@@ -8,7 +8,7 @@ foreach ($teams as $team => $teamInfo) {
     echo "<p>UEAFA Coefficient Ranking: " . $teamInfo['uefa-coefficient-ranking'] . "</p>";
     echo "<p>City: " . $teamInfo['city'] . "</p>";
     echo "<p><a href='" . $teamInfo['url'] . "'>Link</a></p>";
-    echo "<p><img src='" . $teamInfo['logo'] . "' alt='" . $team . " logo'></p>";
+    echo "<p><img src='" . $teamInfo['logo'] . "'width=200'></p>";
     echo "<p>Group: " . $teamInfo['group'] . "</p>";
     echo "<hr>";
 }
