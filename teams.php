@@ -2,15 +2,13 @@
 
 require_once "data.php";
 
-print_r($teams['Barcelona']);
-
-echo "<h2>Barcelona Information:</h2>";
 foreach ($teams as $team => $teamInfo) {
-    echo $team . " ";
-    echo $teamInfo['league'] . " ";
-    echo $teamInfo['uefa-coefficient-ranking'] . " ";
-    echo $teamInfo['city'] . " ";
-    echo $teamInfo['url'] . " ";
-    echo $teamInfo['logo'] . " ";
-    echo $teamInfo['group'] . " ";
+    echo "<h3>" . $team . "</h3>";
+    echo "<p>League: " . $teamInfo['league'] . "</p>";
+    echo "<p>UEAFA Coefficient Ranking: " . $teamInfo['uefa-coefficient-ranking'] . "</p>";
+    echo "<p>City: " . $teamInfo['city'] . "</p>";
+    echo "<p><a href='" . $teamInfo['url'] . "'>Link</a></p>";
+    echo "<p><img src='" . $teamInfo['logo'] . "' alt='" . $team . " logo'></p>";
+    echo "<p>Group: " . $teamInfo['group'] . "</p>";
+    echo "<hr>";
 }

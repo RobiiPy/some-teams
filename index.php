@@ -9,7 +9,7 @@ require_once "header.php";
 </main>
 
 
-
 <?php
+require_once "teams.php";
 require_once "footer.php";
 ?>
